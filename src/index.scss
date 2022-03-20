@@ -1,0 +1,8 @@
+$body-color: red;
+
+body {
+  color: $body-color;
+}
+
+@import url('grapesjs/dist/css/grapes.min.css');
+@import url('grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.css');
