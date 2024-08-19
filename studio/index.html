@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Studio SDK files here -->
+    <script src="vendor/studio-sdk-1.0.11/studio.sdk.min.umd.js"></script>
+    <link rel="stylesheet" href="vendor/studio-sdk-1.0.11/studio.sdk.min.css" />
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+    }
+    main {
+      flex-grow: 1;
+    }
+    #studio {
+      height: 100%;
+    }
+  </style>
+  <body>
+    <nav>
+      <a href="../">Home</a>
+    </nav>
+    <main>
+      <div id="studio"></div>
+      <script>
+        GrapesJsStudioSDK.createStudioEditor({
+          root: '#studio',
+          licenseKey: '',
+        });
+      </script>
+    </main>
+  </body>
+</html>
